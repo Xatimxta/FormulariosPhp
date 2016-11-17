@@ -10,8 +10,20 @@ and open the template in the editor.
         <title>Ejemplo de Formulario de Alta</title>
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+        <form action="datos.php" method="POST">
+            Nombre: <input type="text" name="nombre"><br/>
+            Edad: <input type="number" name="edad"><br/>
+            Ciudad <select name="ciudad"><br/>
+                <option>Barcelona</option>
+                <option>Girona</option>
+                <option>Lleida</option>
+                <option>Tarragona</option>
+            </select>
+            <br/>
+            Sexo: 
+            <input type="radio" name="sexo" value="hombe">
+            <input type="radio" name="sexo" value="mujer">
+            <input type="submit" name="enviar" value="Enviar datos">
+        </form>
     </body>
 </html>
